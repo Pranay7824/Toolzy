@@ -4,7 +4,6 @@ import 'package:intial_proj1/pages/greeting_page.dart';
 import 'package:intial_proj1/pages/notes_page.dart';
 import 'package:intial_proj1/pages/weather_page.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +29,6 @@ class MyApp extends StatelessWidget {
         '/calculator': (context) => Calculator(),
         '/weather': (context) => WeatherPage(),
         '/notes': (context) => NotesPage(),
-
       },
     );
   }

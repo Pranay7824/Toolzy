@@ -137,14 +137,7 @@ class _WeatherPageState extends State<WeatherPage> {
               'Wind Speed: $_windSpeed m/s',
               style: TextStyle(fontSize: 20),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushReplacementNamed(context, '/home');
-              },
-              child: Text('Skip to Home'),
-            ),
           ],
-
         ),
       ),
     );
