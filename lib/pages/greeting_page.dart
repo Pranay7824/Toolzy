@@ -10,8 +10,9 @@ class GreetingsPage extends StatefulWidget {
 
 class _GreetingsPageState extends State<GreetingsPage> {
   final List<String> greetings = [
-    'assets/images/currency_calculator.png',
     'assets/images/calculator.png',
+    'assets/images/notes.jpg',
+    'assets/images/weather.jpg',
   ];
 
   @override
@@ -50,6 +51,12 @@ class _GreetingsPageState extends State<GreetingsPage> {
               pauseAutoPlayOnTouch: true,
               aspectRatio: 2,
             ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, '/home');
+            },
+            child: Text('Skip to Home'),
           ),
         ],
       ),
