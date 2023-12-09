@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intial_proj1/pages/calculator_page.dart';
 import 'package:intial_proj1/pages/greeting_page.dart';
-
+import 'package:intial_proj1/pages/notes_page.dart';
+import 'package:intial_proj1/pages/weather_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
           title: 'Home',
         ),
         '/calculator': (context) => Calculator(),
-
+        '/weather': (context) => WeatherPage(),
+        '/notes': (context) => NotesPage(),
       },
     );
   }
